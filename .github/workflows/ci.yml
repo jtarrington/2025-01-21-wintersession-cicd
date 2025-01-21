@@ -4,5 +4,10 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello world"
+      - name: First step
+        run: |
+          echo "Hello world"
+          mkdir mydir
+          ls -la
+
 
