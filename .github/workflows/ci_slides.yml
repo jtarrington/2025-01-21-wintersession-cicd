@@ -14,14 +14,14 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-      # - name: Install Python
-      #   uses: actions/setup-python@v5
-      #   with:
-      #     python-version: "3.11"
-      # - name: Get slides
-      #   run: pip install git+https://gitlab.com/da_doomer/markdown-slides.git
-      # - name: Generate slides
-      #   run: mdslides slides.md --output_dir slides
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Get slides
+        run: pip install git+https://gitlab.com/da_doomer/markdown-slides.git
+      - name: Generate slides
+        run: mdslides slides.md --output_dir slides
       # - name: Upload slides
       #   uses: actions/upload-pages-artifact@v3
       #   with:
