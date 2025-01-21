@@ -26,7 +26,6 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: ./slides
-      - name: deploy
         
   deploy:
     permissions:
